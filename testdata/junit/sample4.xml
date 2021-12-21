@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="88" failures="0" time="45.030000" name="github.com/circleci/distributor/acceptance">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_RunningATask/assert_task-running,_no_steps" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_RunningATask/assert_task-running,_1_running_step,_some_output" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_RunningATask/assert_task-running,_1_finished_step,_with_output" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_RunningATask/assert_task-finished_with_results_and_times" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_RunningATask/check_allocations_were_sent" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_RunningATask/check_task_type_counts" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_RunningATask/send_task_end_again" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_RunningATask" time="0.500000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_TaskFails/#00/assert_task-finished_with_results_and_times" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_TaskFails/#00/check_allocations_were_sent" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_TaskFails/#00/check_task_type_counts" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_TaskFails/#00" time="0.450000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_TaskFails/#01/assert_task-finished_with_results_and_times" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_TaskFails/#01/check_allocations_were_sent" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_TaskFails/#01/check_task_type_counts" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_TaskFails/#01" time="0.440000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_TaskFails" time="0.890000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_GetTaskConfig/circleapi_returns_500" time="17.420000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_GetTaskConfig" time="17.840000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/A_valid_job_is_dispatched" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/An_unknown_resource_class_id_is_accepted" time="0.070000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/Submit_is_idempotent" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/An_invalid_payload_is_rejected" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/External_Job_is_held_and_can_be_claimed" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/External_claim_registers_runner_details" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/Claim_nops_with_no_available_job" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/job_with_image" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/External_job_must_be_authorized" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/External_Job_with_parallelism_produces_multiple_claimable_tasks" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/External_Job_can_heartbeat_and_can_receive_cancellation" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/External_Job_will_reject_multiple_ends_and_fails/canceled_task_should_be_ended" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/External_Job_will_reject_multiple_ends_and_fails" time="0.040000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/presigned/artifact" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/presigned/test-results" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/presigned/workspace-upload" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/presigned/workspace-download" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/presigned/cache-save" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/presigned/cache-restore" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob/presigned" time="0.040000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob" time="0.720000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_MachineProvisionerTasks/claim/some" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_MachineProvisionerTasks/claim/non" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_MachineProvisionerTasks/claim" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_MachineProvisionerTasks/list/non" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_MachineProvisionerTasks/list/some" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_MachineProvisionerTasks/list" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_MachineProvisionerTasks" time="0.450000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_AuthenticateJob/An_existing_job_is_authenticated_(happy_path)" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_AuthenticateJob/A_non_existent_job_is_attempted_to_be_authenticated_(sad_path)" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_AuthenticateJob" time="0.440000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_UnclaimedTaskCount/Can_get_the_count_of_unclaimed_tasks" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_UnclaimedTaskCount" time="0.440000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_AddResourceClass/Add_a_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_AddResourceClass/Add_a_resource_class_with_non_existent_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_AddResourceClass/list_resource_classes/good" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_AddResourceClass/list_resource_classes/bad_org" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_AddResourceClass/list_resource_classes/bad_permissions_call" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_AddResourceClass/list_resource_classes/bad_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_AddResourceClass/list_resource_classes" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_AddResourceClass" time="0.440000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_DeleteResourceClass/Delete_a_resource_class" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_DeleteResourceClass/Delete_a_resource_class_that_doesn&#39;t_exist" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_DeleteResourceClass/Delete_a_resource_class_that_has_tokens" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_DeleteResourceClass" time="0.440000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_CreateToken/Create_a_token_with_a_nonexistent_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_CreateToken/Create_a_token_with_a_nonexistent_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_CreateToken/Create_a_token" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_CreateToken/Delete_a_nonexistent_token" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_CreateToken/Delete_a_token" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_CreateToken" time="0.450000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_LaunchAgentVersion/Get_Latest_launch-agent_for_circleci-runner_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_LaunchAgentVersion/Get_Latest_launch-agent_for_another_namespace" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_LaunchAgentVersion" time="0.430000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob_ExecutionUnauthorized/An_unauthorized_runner_job_is_rejected_without_the_preview_flag" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob_ExecutionUnauthorized/An_unauthorized_runner_job_is_accepted_with_the_preview_flag" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob_ExecutionUnauthorized/A_forked_OSS_runner_job_is_rejected" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_PostJob_ExecutionUnauthorized" time="0.460000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_GetReportAccepted/We_get_a_report" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestAPI_GetReportAccepted" time="0.430000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestServer_DoesntCallPlansForAuthorization/A_runner_job_is_accepted_without_calling_plans" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestServer_DoesntCallPlansForAuthorization" time="0.430000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestServer_API_PostJob/Claimed_job_has_pinned_agent_version" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestServer_API_PostJob" time="0.430000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestServer_API_LaunchAgentVersion/Get_Latest_launch-agent_returns_410" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestServer_API_LaunchAgentVersion" time="0.430000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestStartStopNoConfig" time="0.370000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestStartStopProdFailedNoKey" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/acceptance" name="TestDispatcher_Readiness" time="0.610000"></testcase>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/acceptance/internal/binary">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/api">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="1" failures="0" time="0.010000" name="github.com/circleci/distributor/api/admin">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/api/admin" name="TestNewAdminAPI_ReadinessCheckFailsOnMissingDB" time="0.010000"></testcase>
+	</testsuite>
+	<testsuite tests="194" failures="0" time="3.070000" name="github.com/circleci/distributor/api/external">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Cancel" time="0.050000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/good_request" time="0.060000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/override_build-agent_version" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/bad_path" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/bad_bearer_token" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/no_bearer_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/bad_method" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/no_tasks_found" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/error_claiming_task" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/name_separated_by_dashes" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/name_separated_by_underscores" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/name_separated_by_dots" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/name_which_includes_parentheses" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/name_which_looks_like_a_path" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/name_which_includes_backslashes" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/name_which_includes_newlines" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post/hostname_not_valid" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post" time="0.200000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post_Runners/happy" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post_Runners/no_task" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post_Runners/recorder_error" time="0.040000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post_Runners/created_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post_Runners/no_task_created_error" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestClaimTaskHandler_Post_Runners" time="0.080000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestAgentS3Integration" time="0.410000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestLaunchAgentS3Integration" time="0.090000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestDownloadHandler_Get/Good_request_Linux" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestDownloadHandler_Get/Good_request_Windows" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestDownloadHandler_Get/Good_request_ARM" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestDownloadHandler_Get/No_version_returns_latest" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestDownloadHandler_Get/Returns_pinned_version_if_specified" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestDownloadHandler_Get/Bad_method" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestDownloadHandler_Get/Unknown_version" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestDownloadHandler_Get/Unsupported_OS" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestDownloadHandler_Get/Empty_Checksums_File" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestDownloadHandler_Get/Release_locked" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestDownloadHandler_Get" time="0.110000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestLargeRequest" time="1.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/Find_by_resource_class_user-auth" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/Find_multiple_agents_by_namespace_user-auth" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/Find_by_resource_class_resource-auth" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/Find_multiple_agents_by_namespace_resource-auth_fails" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/Invalid_auth_no_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/Invalid_auth" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/No_org_associated_with_resource-class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/No_org_associated_with_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/Lacking_permissions" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/Permission_checker_unavailable" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/Invalid_resource-class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/No_query_parameters" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/Both_query_parameters" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/Resource_class_unauthorized" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get/Namespace_unauthorized" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestRunnerListHandler_Get" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceCreateHandler/add_a_good_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceCreateHandler/invalid_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceCreateHandler/adding_fails" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceCreateHandler/add_a_duplicate" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceCreateHandler/namespace_resolver_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceCreateHandler/namespace_resolver_returns_no_match" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceCreateHandler/not_an_runner_admin" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceCreateHandler/agent_admin_check_errors" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceCreateHandler/user_auth_returns_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceCreateHandler/resource_class_limit_reached" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceCreateHandler" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceDeleteHandler/delete_a_good_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceDeleteHandler/delete_a_nonexistent_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceDeleteHandler/not_an_admin" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceDeleteHandler/tokens_exist" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceDeleteHandler/outside_our_org" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceDeleteHandler/delete_errors" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceDeleteHandler/getting_resource_class_errors" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceDeleteHandler/invalid_uuid" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceDeleteHandler" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceListHandler/good_list" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceListHandler/ns_has_no_classes_added" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceListHandler/empty_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceListHandler/invalid_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceListHandler/no_permission_to_view" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceListHandler/permission_resolver_errors" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceListHandler/list_returns_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceListHandler/namespace_resolver_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceListHandler/namespace_not_found_in_resolver" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestResourceListHandler" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenCreateHandler/add_a_good_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenCreateHandler/can_not_create_the_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenCreateHandler/invalid_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenCreateHandler/adding_fails" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenCreateHandler/namespace_resolver_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenCreateHandler/namespace_not_found_in_resolver" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenCreateHandler/not_an_runner_admin" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenCreateHandler/agent_admin_check_errors" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenCreateHandler/user_auth_returns_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenCreateHandler/resource_class_not_found" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenCreateHandler/resource_class_limit_reached" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenCreateHandler" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenListHandler/good_list" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenListHandler/resource_class_has_no_tokens_added" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenListHandler/empty_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenListHandler/missing_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenListHandler/invalid_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenListHandler/no_permission_to_view" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenListHandler/permission_resolver_errors" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenListHandler/list_returns_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenListHandler" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenRevokeHandler/successfully_revoke_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenRevokeHandler/remove_token_fails" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenRevokeHandler/user_auth_fails" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenRevokeHandler/not_a_runner_admin" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenRevokeHandler/token_does_not_exist" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenRevokeHandler/token_lookup_fails" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenRevokeHandler/ns_resolve_fails" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenRevokeHandler/admin_permission_check_fails" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenRevokeHandler/invalid_id" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTokenRevokeHandler" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskAuthenticator/Rejects_no_Authorization_header" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskAuthenticator/Rejects_invalid_Authorization_header" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskAuthenticator/Exchanges_Bearer_token_for_Task_Auth_model" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskAuthenticator/Rejects_if_errored_from_taskAuthLookup" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskAuthenticator/Rejects_if_nil_from_taskAuthLookup" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskAuthenticator/Uses_an_in-memory_cache_to_avoid_lots_of_lookups" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskAuthenticator/Errors_are_not_cached" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskAuthenticator/Not_finding_a_task_is_cached" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskAuthenticator" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskConfigHandler_Post/good_request" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskConfigHandler_Post/task_not_found_is_unauthorized" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskConfigHandler_Post/error_getting_task_is_unauthorized" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskConfigHandler_Post/no_bearer_token_is_unauthorized" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskConfigHandler_Post" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEvent/event_start" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEvent/event_end" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEvent/step_start" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEvent/step_end" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEvent/step_output" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEvent/step_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEvent/bad_event" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEvent/bad_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEvent/bad_build_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEvent/other_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEvent/duplicate_ends" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEvent/duplicate_fails" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEvent" time="0.080000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEventEnd/Task_end_with_all_fields" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEventEnd/Task_end_without_usage" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEventEnd/Task_end_with_data-usage_but_no_transfers" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEventEnd" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestEventConcurrentCalls" time="0.320000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestHeartbeat/heartbeats" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestHeartbeat" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestHeartbeat_WhenCanceled/heartbeats_with_canceled_flag" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestHeartbeat_WhenCanceled" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskStorage_Credentials/good" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskStorage_Credentials/bad_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskStorage_Credentials/bad_build_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskStorage_Credentials/other_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskStorage_Credentials" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskStorage_Presigned/artifacts/good" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskStorage_Presigned/artifacts" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskStorage_Presigned/test-results/good" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskStorage_Presigned/test-results" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskStorage_Presigned/workspace-upload/good" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskStorage_Presigned/workspace-upload" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskStorage_Presigned/workspace-download/good" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskStorage_Presigned/workspace-download" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestTaskStorage_Presigned" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestMapTaskStorageError/nil-custom-error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestMapTaskStorageError/nil" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestMapTaskStorageError/string-error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestMapTaskStorageError/unauthenticated" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestMapTaskStorageError/exists" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestMapTaskStorageError/not-found" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestMapTaskStorageError" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestUnclaimedTaskCountHandler/No_unclaimed_tasks" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestUnclaimedTaskCountHandler/There_are_unclaimed_tasks" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestUnclaimedTaskCountHandler/Empty_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestUnclaimedTaskCountHandler/Missing_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestUnclaimedTaskCountHandler/Malformed_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestUnclaimedTaskCountHandler/No_permission_to_view" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestUnclaimedTaskCountHandler/Permission_resolver_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestUnclaimedTaskCountHandler/Query_unclaimed_task_count_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="TestUnclaimedTaskCountHandler" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="Test_userAuthenticator/Returns_nil_err_and_nil_value_when_no_header_nor_cookie_provided" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="Test_userAuthenticator/Returns_Unauthorized_error_when_mismatched_circle_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="Test_userAuthenticator/Returns_Unauthorized_error_mismatched_cookie" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="Test_userAuthenticator/Returns_error_with_circle_token_and_resolve_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="Test_userAuthenticator/Returns_error_with_cookie_and_resolve_error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="Test_userAuthenticator/Returns_userId_when_circle-token_is_valid" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="Test_userAuthenticator/Returns_userId_when_auth_is_valid" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="Test_userAuthenticator/Returns_userId_when_query_not_provided_and_valid_cookie" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="Test_userAuthenticator" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="Test_getCircleToken/Returns_token_from_Circle-Token_header" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="Test_getCircleToken/Returns_token_from_Auth_header" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="Test_getCircleToken/Returns_empty_token_when_no_token_provided" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external" name="Test_getCircleToken" time="0.000000"></testcase>
+	</testsuite>
+	<testsuite tests="15" failures="0" time="3.140000" name="github.com/circleci/distributor/api/external/auth">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestPermissionsClient_CanViewRunners/Return_allowed_when_valid_userID_and_orgID" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestPermissionsClient_CanViewRunners/Return_not_allowed_when_invalid_userID_and_valid_orgID" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestPermissionsClient_CanViewRunners/Return_not_allowed_when_valid_userID_and_invalid_orgID" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestPermissionsClient_CanViewRunners/Return_error_when_server_not_available" time="0.700000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestPermissionsClient_CanViewRunners" time="0.710000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestPermissionsClient_CanAdminRunners/Return_allowed_when_valid_userID_and_orgID" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestPermissionsClient_CanAdminRunners/Return_not_allowed_when_invalid_userID_and_valid_orgID" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestPermissionsClient_CanAdminRunners/Return_not_allowed_when_valid_userID_and_invalid_orgID" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestPermissionsClient_CanAdminRunners/Return_error_when_server_not_available" time="0.840000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestPermissionsClient_CanAdminRunners" time="0.850000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestUserAuther/Return_userID_when_valid_circle-token" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestUserAuther/Return_no_err_when_invalid_circle-token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestUserAuther/Return_userID_when_valid_ring-session_cookie" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestUserAuther/Return_err_when_invalid_ring-session_cookie" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/external/auth" name="TestUserAuther" time="0.030000"></testcase>
+	</testsuite>
+	<testsuite tests="55" failures="0" time="1.070000" name="github.com/circleci/distributor/api/internalapi">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestReport" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestClaimTaskHandler/Successfully_claim_a_task" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestClaimTaskHandler/Override_build-agent_version" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestClaimTaskHandler/Incorrect_method" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestClaimTaskHandler/Empty_body" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestClaimTaskHandler/Empty_resource_class" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestClaimTaskHandler/Missing_resource_class_executor" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestClaimTaskHandler/Missing_resource_class_class" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestClaimTaskHandler/Invalid_type_for_resource_class" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestClaimTaskHandler/Invalid_characters_in_resource_class" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestClaimTaskHandler/Error_while_claiming_a_task" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestClaimTaskHandler" time="0.100000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/all_fields_set" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/all_fields_set_with_a_runner_job" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/unknown_resource_class" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/already_submitted_is_okay" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/bad_path" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/bad_method" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/invalid_job" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/runner_not_authorized" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/runner_resource_class_not_found" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/resource_class_invalid" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/bad_field_type" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/extra_fields_are_okay" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/unexpected_error_causes_500" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/plans_service_error_is_ignored" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/plans_service_auth_error_causes_a_403" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/Job_submitted_as_OSS_properly_marks_up_submitted_job_metadata" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/invalid_resource_class_responds_422" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/missing_resource_class_responds_422" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/runner_Jobs_with_OSS_flag_on_triggered_by_forks_are_rejected" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/runner_Jobs_with_OSS_flag_on_are_not_rejected" time="0.060000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/non_runner_jobs_are_not_rejected" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs/Job_is_created_when_use-machine-provisioner_flag_is_enabled" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_PostJobs" time="0.600000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestJobHandler_BadContentType" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestCancelJobHandler_PostJobsCancel/good_request" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestCancelJobHandler_PostJobsCancel/already_canceled_is_okay" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestCancelJobHandler_PostJobsCancel/bad_path" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestCancelJobHandler_PostJobsCancel/bad_method" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestCancelJobHandler_PostJobsCancel/non_existing_external_id_is_okay" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestCancelJobHandler_PostJobsCancel/bad_field_type" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestCancelJobHandler_PostJobsCancel/extra_fields_are_okay" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestCancelJobHandler_PostJobsCancel/unexpected_error_causes_500" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestCancelJobHandler_PostJobsCancel/bad_content_type" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestCancelJobHandler_PostJobsCancel" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestAuthenticateJobHandler_Authenticate/bad_method" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestAuthenticateJobHandler_Authenticate/authorization_header_not_set" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestAuthenticateJobHandler_Authenticate/authorization_header_set_but_does_not_start_with_bearer" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestAuthenticateJobHandler_Authenticate/empty_bearer_token_header_field" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestAuthenticateJobHandler_Authenticate/internal_server_error_causes_500" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestAuthenticateJobHandler_Authenticate/nonexistent_job_causes_404" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestAuthenticateJobHandler_Authenticate/found_job_returns_200" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestAuthenticateJobHandler_Authenticate" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/internalapi" name="TestStructTable" time="0.000000"></testcase>
+	</testsuite>
+	<testsuite tests="8" failures="0" time="0.000000" name="github.com/circleci/distributor/api/middleware">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/api/middleware" name="TestErrorWrap" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/middleware" name="TestErrorRecover" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/middleware" name="TestErrorNoCode" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/middleware" name="TestErrorString" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/middleware" name="TestErrorNil" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/middleware" name="TestIsHTTPError" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/middleware" name="TestHttpError_Is" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/middleware" name="TestHTTPError_DifferentNotIs" time="0.000000"></testcase>
+	</testsuite>
+	<testsuite tests="19" failures="0" time="0.430000" name="github.com/circleci/distributor/api/release">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestRequirements_Validate/Valid_production_release" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestRequirements_Validate/Valid_development_release" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestRequirements_Validate/Valid_canary_release" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestRequirements_Validate/Invalid_version_with_newline" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestRequirements_Validate/Invalid_version_with_non-hex_digits" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestRequirements_Validate/OS_missing" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestRequirements_Validate/Arch_missing" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestRequirements_Validate" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestDownloader_Version/good_request" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestDownloader_Version/forbidden_request" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestDownloader_Version/error_request" time="0.080000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestDownloader_Version/good_request_for_additional_release_type" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestDownloader_Version" time="0.100000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestDownloader_Resolve/Good_request_linux" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestDownloader_Resolve/Good_request_windows" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestDownloader_Resolve/Unknown_OS" time="0.050000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestDownloader_Resolve/Unknown_arch" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestDownloader_Resolve/Unknown_version" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/api/release" name="TestDownloader_Resolve" time="0.120000"></testcase>
+	</testsuite>
+	<testsuite tests="11" failures="0" time="0.500000" name="github.com/circleci/distributor/assembly">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/assembly" name="TestConfig_Invalid" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly" name="TestTaskAssembler_TaskConfig/missing" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly" name="TestTaskAssembler_TaskConfig/good" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly" name="TestTaskAssembler_TaskConfig/circleci://_storageBase" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly" name="TestTaskAssembler_TaskConfig" time="0.460000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly" name="TestConfig_envVars/Context_environment_variables_win_over_project_environment_variables" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly" name="TestConfig_envVars/Empty_context_without_project_environment_variables" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly" name="TestConfig_envVars/Project_environment_variables_without_context_environment_variables" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly" name="TestConfig_envVars/Project_environment_variables_and_context_environment_variables_are_nil" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly" name="TestConfig_envVars/Continuation_key_is_only_added_if_present" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly" name="TestConfig_envVars" time="0.000000"></testcase>
+	</testsuite>
+	<testsuite tests="14" failures="0" time="0.030000" name="github.com/circleci/distributor/assembly/image">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/assembly/image" name="TestLinuxImage/docker-job" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/image" name="TestLinuxImage/machine-with-image" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/image" name="TestLinuxImage/macos" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/image" name="TestLinuxImage/windows-orb" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/image" name="TestLinuxImage/2.1-&gt;2.0" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/image" name="TestLinuxImage/expanded-executor" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/image" name="TestLinuxImage/machine-enabled" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/image" name="TestLinuxImage/machine-true" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/image" name="TestLinuxImage/machine-false" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/image" name="TestLinuxImage/machine-integer" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/image" name="TestLinuxImage/machine-array" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/image" name="TestLinuxImage/machine-missing" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/image" name="TestLinuxImage/windows-true" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/image" name="TestLinuxImage" time="0.020000"></testcase>
+	</testsuite>
+	<testsuite tests="18" failures="0" time="0.020000" name="github.com/circleci/distributor/assembly/normalise">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestJob/Parsing_env_vars_obj" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestJob/Parsing_env_vars_slice" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestJob/Parsing_env_vars_slice_dup" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestJob/Parsing_env_vars_slice_of_obj" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestJob/Parsing_env_vars_slice_of_one_obj" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestJob/Parsing_env_vars_slice_3=" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestJob/Parsing_env_vars_slice_error_-_don&#39;t_normalise" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestJob/Parsing_env_vars_int_error_-_don&#39;t_normalise" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestJob/Parsing_step_string" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestJob/Parsing_step_obj" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestJob" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="Test_NormaliseNil" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestConfig_ResourceClass/happy_path_-_linux_resource_class_with_image_in_yaml" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestConfig_ResourceClass/sad_path_-_macos_resource_class_with_image_in_yaml" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestConfig_ResourceClass/sad_path_-_linux_resource_class_without_image_in_yaml" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestConfig_ResourceClass/happy_path_-_linux_resource_class_with_image_in_differing_from_one_in_yaml" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestConfig_ResourceClass/happy_path_-_linux_resource_class_with_image_and_without_one_in_yaml" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/assembly/normalise" name="TestConfig_ResourceClass" time="0.010000"></testcase>
+	</testsuite>
+	<testsuite tests="6" failures="0" time="0.950000" name="github.com/circleci/distributor/buildqueue">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/buildqueue" name="TestSQLQueue/Forward" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/buildqueue" name="TestSQLQueue/ForwardTwoDifferentJobsOkay" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/buildqueue" name="TestSQLQueue/ForwardIsIdempotent" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/buildqueue" name="TestSQLQueue" time="0.430000"></testcase>
+		<testcase classname="github.com/circleci/distributor/buildqueue" name="TestSQLQueue_Forward_ErrorHandling" time="0.510000"></testcase>
+		<testcase classname="github.com/circleci/distributor/buildqueue" name="TestSumContainers" time="0.000000"></testcase>
+	</testsuite>
+	<testsuite tests="9" failures="0" time="0.040000" name="github.com/circleci/distributor/circleapi">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/circleapi" name="TestClient_Config" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/circleapi" name="TestClient_ExecutionFields/Successful_update" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/circleapi" name="TestClient_ExecutionFields/404_Build_not_found" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/circleapi" name="TestClient_ExecutionFields/401_Unauthorized_with_wrong_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/circleapi" name="TestClient_ExecutionFields" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/circleapi" name="TestClient_MarkUsageQueued/Successfully_marked_for_usage_queue" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/circleapi" name="TestClient_MarkUsageQueued/404_Build_not_found" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/circleapi" name="TestClient_MarkUsageQueued" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/circleapi" name="TestClient_Containers" time="0.010000"></testcase>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/client">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="1" failures="0" time="0.000000" name="github.com/circleci/distributor/cmd">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/cmd" name="TestRunProd_BadMode" time="0.000000"></testcase>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/cmd/dispatcher">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="2" failures="0" time="0.060000" name="github.com/circleci/distributor/cmd/externalapi">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/cmd/externalapi" name="TestRun_NoCircleAPI" time="0.060000"></testcase>
+		<testcase classname="github.com/circleci/distributor/cmd/externalapi" name="TestRun_NoHoneycomb" time="0.000000"></testcase>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/cmd/internalapi">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/cmd/setup">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="13" failures="0" time="0.000000" name="github.com/circleci/distributor/config">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/config" name="TestShared_LoadShared" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/config" name="Test_Validate/Valid_env_and_mode" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/config" name="Test_Validate/Blank_env_is_valid" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/config" name="Test_Validate/Invalid_env" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/config" name="Test_Validate/Must_have_one_mode_in_production" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/config" name="Test_Validate/Multiple_modes_allowed_in_development" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/config" name="Test_Validate/Invalid_mode" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/config" name="Test_Validate/No_modes_is_valid" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/config" name="Test_Validate" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/config" name="Test_HasMode/Defaults_to_all_modes" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/config" name="Test_HasMode/Mode_in_list" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/config" name="Test_HasMode/Mode_not_in_list" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/config" name="Test_HasMode" time="0.000000"></testcase>
+	</testsuite>
+	<testsuite tests="3" failures="0" time="0.010000" name="github.com/circleci/distributor/contexts">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/contexts" name="TestClient_GetContext/empty_return" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/contexts" name="TestClient_GetContext/two_context_vars_return" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/contexts" name="TestClient_GetContext" time="0.010000"></testcase>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/contexts/protocol">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="74" failures="0" time="20.519000" name="github.com/circleci/distributor/distribution">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestChooseForDispatch" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestChooseForDispatch_CircleAPIFail" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestCanForwardJobCountsUpdated/nonMac" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestCanForwardJobCountsUpdated/mac" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestCanForwardJobCountsUpdated" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestCanChooseMultipleClasses" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestCanForwardJobCounts/numbers-0" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestCanForwardJobCounts/numbers-1" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestCanForwardJobCounts/numbers-2" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestCanForwardJobCounts/numbers-3" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestCanForwardJobCounts/numbers-4" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestCanForwardJobCounts/numbers-5" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestCanForwardJobCounts/numbers-6" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestCanForwardJobCounts/numbers-7" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestCanForwardJobCounts" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestMacAndNonMacBlockOthers" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestDispatchJobsError" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestDispatchFailsOnUnknownJob" time="0.390000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestDispatch_Sharing" time="2.009000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestDispatch_LargeBatches_Not_throttled" time="2.120000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestDispatch_BlockedSubmitIsNoticed" time="0.300000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestDispatch_JobCancelled" time="0.260000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestDispatch_LargeJobLists" time="7.950000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestDispatch_DispatchJobsForKey" time="0.350000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestDispatch_DifferentJobClasses" time="0.350000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestGauges" time="4.870000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/valid" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/missing_external_id" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/external_id_all_spaces" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/short_external_id" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/zero_parallelism" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/missing_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/missing_distribution_key" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/distribution_key_all_spaces" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/long_distribution_key" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/missing_build_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/build_token_wrong_length" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/expected_build_token_length" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/internal_jobs_need_a_build_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/storage_prefix_is_required" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/org-analytics-id_is_required" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate/project-analytics-id_is_required" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate_BuildAgentVersion/allowed_project_and_valid_version" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate_BuildAgentVersion/other_allowed_project_and_valid_version" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate_BuildAgentVersion/allowed_project_and_invalid_version" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate_BuildAgentVersion/other_allowed_project_and_invalid_version" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate_BuildAgentVersion/disallowed_project_and_valid_version" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Validate_BuildAgentVersion" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_IsSameRequest/only_cares_about_the_request_parameters" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_IsSameRequest/different_distribution_key" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_IsSameRequest/different_parallelism" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_IsSameRequest/different_resource_class_ID" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_IsSameRequest/different_external_ID" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_IsSameRequest/different_build_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_IsSameRequest/nil_other" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_IsSameRequest" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_ProjectURL" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_OrgURL" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_Number" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestJob_BuildURL" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestReconcile" time="0.480000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestReconcile_Conflict" time="0.330000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestSubmitter_Cancel" time="0.340000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestSubmitter_NonBlocking" time="0.340000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestMakeUML" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestMakeSQL" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestInvalidFromTaskStates/only_unclaimed_can_transition_to_claimed" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestInvalidFromTaskStates/nothing_can_transition_back_to_unclaimed" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestInvalidFromTaskStates/canceled_and_completed_can_not_transition_canceling" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestInvalidFromTaskStates/canceled_and_completed_can_not_transition_to_completed" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestInvalidFromTaskStates" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestQueryTasksCancel/cancel_a_job" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution" name="TestQueryTasksCancel" time="0.340000"></testcase>
+	</testsuite>
+	<testsuite tests="48" failures="2" time="9.050000" name="github.com/circleci/distributor/distribution/integration">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/ConsiderDispatch_recovers_correctly_when_circle_fails" time="0.060000">
+			<failure message="Failed" type="">=== RUN   TestDistributor/ConsiderDispatch_recovers_correctly_when_circle_fails&#xA;16:06:54 034a5 0.772ms db: job.submit app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED db.entity=job db.query_name=submit db.system=postgresql result=success&#xA;16:06:54 034a5 1.587ms tx-manager: with-transaction app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED result=success&#xA;16:06:54 034a5 3.067ms httpclient: call api.client=circle api.route=/builds/%s/mark-usage-queued app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.meta.type=http_client app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.response.content_length=0 app.response.status_code=200 app.state=ACCEPTED http.attempt=1 http.host=127.0.0.1:40783 http.method=POST http.retry=false http.scheme=http http.target=/api/internal/builds/6a19a19c2b785e63a4dbed2f/mark-usage-queued result=success&#xA;16:06:54 034a5 3.486ms httpclient: circle /builds/%s/mark-usage-queued api.client=circle api.route=/builds/%s/mark-usage-queued app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED http.base_url=http://127.0.0.1:40783/api/internal http.method=POST http.status_code=200 http.url=http://127.0.0.1:40783/api/internal/builds/6a19a19c2b785e63a4dbed2f/mark-usage-queued result=success span.kind=httpclient&#xA;16:06:54 034a5 0.474ms db: distribution.add app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED db.entity=distribution db.query_name=add db.system=postgresql result=success&#xA;16:06:54 034a5 1.249ms tx-manager: with-transaction app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED result=success&#xA;16:06:54 034a5 7.076ms distributor: submit-dispatched app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED result=success&#xA;16:06:54 034a5 2.294ms httpclient: call api.client=output api.route=/job/new app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.meta.type=http_client app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.response.content_length=0 app.response.status_code=200 app.state=ACCEPTED http.attempt=1 http.host=127.0.0.1:37673 http.method=POST http.retry=false http.scheme=http http.target=/job/new result=success&#xA;16:06:54 034a5 2.809ms httpclient: output /job/new api.client=output api.route=/job/new app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED http.base_url=http://127.0.0.1:37673 http.method=POST http.status_code=200 http.url=http://127.0.0.1:37673/job/new result=success span.kind=httpclient&#xA;16:06:54 034a5 10.707ms distributor: submit app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED result=success&#xA;16:06:54 ab923 0.922ms db: distribution.acquire-key db.entity=distribution db.query_name=acquire-key db.system=postgresql result=success&#xA;16:06:54 ab923 0.984ms db: job.jobs-chunk app.distribution_key=plan-key--ef7f59e8790648 db.entity=job db.query_name=jobs-chunk db.system=postgresql result=success&#xA;16:06:54 ab923 0.655ms db: build-queue.counts app.distribution_key=plan-key--ef7f59e8790648 app.org_url=gh/circleci db.entity=build-queue db.query_name=counts db.system=postgresql result=success&#xA;16:06:54 ab923 1.103ms httpclient: call api.client=circle api.route=/plans/%s/containers app.distribution_key=plan-key--ef7f59e8790648 app.meta.type=http_client app.org_url=gh/circleci app.response.content_length=17 app.response.content_type=text/plain; charset=utf-8 app.response.status_code=500 error=the response from GET /plans/%s/containers was 500 (Internal Server Error) (1 attempts) http.attempt=1 http.host=127.0.0.1:40783 http.method=GET http.retry=false http.scheme=http http.target=/api/internal/plans/plan-key--ef7f59e8790648/containers result=error&#xA;16:06:54 ab923 1.426ms httpclient: circle /plans/%s/containers api.client=circle api.route=/plans/%s/containers app.distribution_key=plan-key--ef7f59e8790648 app.org_url=gh/circleci error=the response from GET /plans/%s/containers was 500 (Internal Server Error) (1 attempts) http.base_url=http://127.0.0.1:40783/api/internal http.method=GET http.status_code=500 http.url=http://127.0.0.1:40783/api/internal/plans/plan-key--ef7f59e8790648/containers result=error span.kind=httpclient&#xA;16:06:54 ab923 0.753ms db: build-queue.forward app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.org_url=gh/circleci app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED db.entity=build-queue db.query_name=forward db.system=postgresql result=success&#xA;16:06:54 ab923 0.527ms db: job.mark-dispatched app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.org_url=gh/circleci app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED db.entity=job db.query_name=mark-dispatched db.system=postgresql result=success&#xA;16:06:54 ab923 1.927ms dispatcher: dispatch app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.org_url=gh/circleci app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED result=success&#xA;16:06:54 ab923 2.617ms tx-manager: with-transaction app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.org_url=gh/circleci app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED result=success&#xA;16:06:54 ab923 1.327ms httpclient: call api.client=circle api.route=/builds/%s/queued-at app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.meta.type=http_client app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.org_url=gh/circleci app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.response.content_length=17 app.response.content_type=text/plain; charset=utf-8 app.response.status_code=500 app.state=ACCEPTED error=the response from POST /builds/%s/queued-at was 500 (Internal Server Error) (1 attempts) http.attempt=1 http.host=127.0.0.1:40783 http.method=POST http.retry=false http.scheme=http http.target=/api/internal/builds/6a19a19c2b785e63a4dbed2f/queued-at result=error&#xA;16:06:54 ab923 1.710ms httpclient: circle /builds/%s/queued-at api.client=circle api.route=/builds/%s/queued-at app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.org_url=gh/circleci app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED error=the response from POST /builds/%s/queued-at was 500 (Internal Server Error) (1 attempts) http.base_url=http://127.0.0.1:40783/api/internal http.method=POST http.status_code=500 http.url=http://127.0.0.1:40783/api/internal/builds/6a19a19c2b785e63a4dbed2f/queued-at result=error span.kind=httpclient&#xA;16:06:54 ab923 5.039ms dispatcher: dispatch-job app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.org_url=gh/circleci app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED app.time_in_queue=21.383135ms error=failed to update queued at time to circle API: the response from POST /builds/%s/queued-at was 500 (Internal Server Error) (1 attempts) result=error&#xA;16:06:54 ab923 9.512ms dispatcher: distribute-jobs app.build_url=https://circleci.com/gh/circleci/distributor/123 app.cache_hit_plans_containers=0 app.cache_len_plans_containers=0 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.inuse_mac_non_oss=0 app.inuse_mac_oss=0 app.inuse_non_mac_non_oss=0 app.inuse_non_mac_oss=0 app.jobs_failed=0 app.jobs_tested=1 app.jobs_to_dispatch=1 app.limited_by=nothing app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.org_url=gh/circleci app.parallelism=1 app.plan_mac_non_oss=10 app.plan_mac_oss=0 app.plan_non_mac_non_oss=500 app.plan_non_mac_oss=0 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED app.tasks_to_dispatch_mac=1 app.tasks_to_dispatch_non_mac=0 error=dispatch job error: failed to update queued at time to circle API: the response from POST /builds/%s/queued-at was 500 (Internal Server Error) (1 attempts) result=error&#xA;16:06:54 ab923 9.837ms dispatcher: dispatch-key app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.org_url=gh/circleci app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED error=dispatch job error: failed to update queued at time to circle API: the response from POST /builds/%s/queued-at was 500 (Internal Server Error) (1 attempts) result=error&#xA;16:06:54 ab923 11.657ms tx-manager: with-transaction app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.org_url=gh/circleci app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED error=dispatch job error: failed to update queued at time to circle API: the response from POST /builds/%s/queued-at was 500 (Internal Server Error) (1 attempts) result=error&#xA;16:06:54 ab923 11.906ms dispatcher: consider-dispatch app.build_url=https://circleci.com/gh/circleci/distributor/123 app.distribution_key=plan-key--ef7f59e8790648 app.external_id=6a19a19c2b785e63a4dbed2f app.org_analytics_id=62903430-0d3d-44c7-9eb9-cc47164b42c7 app.org_url=gh/circleci app.outcome=dispatch app.parallelism=1 app.project_analytics_id=9816fef5-9b3a-4d59-923d-ea75ec581489 app.resource_class_id=macos.large app.state=ACCEPTED error=dispatch job error: failed to update queued at time to circle API: the response from POST /builds/%s/queued-at was 500 (Internal Server Error) (1 attempts) result=error&#xA;    distribution_test.go:787: assertion failed: ACCEPTED (distribution.StateAccepted distribution.JobState) != DISPATCHED (job.State distribution.JobState)&#xA;16:06:54 3e146 1.805ms tx-manager: with-transaction result=success&#xA;    --- FAIL: TestDistributor/ConsiderDispatch_recovers_correctly_when_circle_fails (0.06s)&#xA;</failure>
+		</testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor" time="1.580000">
+			<failure message="Failed" type="">=== RUN   TestDistributor&#xA;16:06:54 b4b25 0.030ms applying schema app.file=schema-distributor.sql&#xA;16:06:53 b4b25 344.289ms dbfixture: newDB app.dbname=24a16c-TestDistributor app.host=localhost:5432 app.user=distributor result=success&#xA;16:06:54 88de9 0.025ms applying schema app.file=schema-build-queue.sql&#xA;16:06:54 88de9 21.838ms dbfixture: newDB app.dbname=24a16c-TestDistributor app.host=localhost:5433 app.user=circle result=success&#xA;--- FAIL: TestDistributor (1.58s)&#xA;</failure>
+		</testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestJobRejection/Invalid_resource_class_causes_job_to_be_rejected" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestJobRejection" time="0.500000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestConcurrentSubmits" time="4.400000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Submitting_a_non-runner_job" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Non-runner_jobs_update_usage_queue_time_with_circle" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Runner_jobs_are_held_and_get_task_records" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Machine_Provisioner_jobs_are_held_and_get_task_records" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Runner_jobs_get_updates_sent_to_the_circle_api" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Runner_Jobs_can_have_multiple_tasks_created" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Runner_Jobs_can_be_canceled" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Cancelling_request_to_non-existing_job_can_be_accepted" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Task_completion" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Tasks_can_have_a_heartbeat" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Tasks_can_have_a_heartbeat_which_reports_cancelation" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/SubmitTwiceIdempotent" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/SubmitTwiceWithDifferentContentsFails" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/SubmitInvalidFails" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Claiming_tasks_without_runner_prefix" time="0.050000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Claiming_Runner_Tasks/gets_nothing_from_an_unmatched_ID" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Claiming_Runner_Tasks/gets_matching_unclaimed_tasks_out" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Claiming_Runner_Tasks" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Only_authorized_projects_allowed_to_override_build-agent/unauthorized_project_not_allowed_to_override_build-agent_version" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Only_authorized_projects_allowed_to_override_build-agent/authorized_project_can_override_build-agent_version" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Only_authorized_projects_allowed_to_override_build-agent" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Can_find_claimed_task_by_token/gets_nothing_from_an_unmatched_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Can_find_claimed_task_by_token/can_get_info_for_claimed_task" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Can_find_claimed_task_by_token" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/ConsiderDispatch_dispatches_successfully" time="0.040000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Dispatching_a_job_marks_it_as_queued_in_circle" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/ConsiderDispatch_recovers_correctly_when_our_DB_fails" time="0.040000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/ConsiderDispatch_returns_ErrNoJobsToConsider_when_nothing_to_do" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/ConsiderDispatch_does_all_jobs_for_one_DistributionKey" time="0.060000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/ConsiderDispatch_can_be_looped_over" time="0.230000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/ConsiderDispatch_results_in_build-queue_counts" time="0.190000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/JobState_returns_the_job_state_when_given_the_build-token" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/JobState_returns_an_empty_string_when_the_build-token_is_missing" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Can_get_the_count_of_unclaimed_tasks/There_are_unclaimed_tasks" time="0.050000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Can_get_the_count_of_unclaimed_tasks/There_are_no_unclaimed_tasks" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Can_get_the_count_of_unclaimed_tasks/No_tasks_for_resource_class" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor/Can_get_the_count_of_unclaimed_tasks" time="0.080000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor_BuildQueueDBErrors/ConsiderDispatch" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor_BuildQueueDBErrors" time="0.380000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor_DistributorDBErrors/Submit_with_task_errors" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor_DistributorDBErrors/Submit" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor_DistributorDBErrors/ConsiderDispatch" time="0.340000"></testcase>
+		<testcase classname="github.com/circleci/distributor/distribution/integration" name="TestDistributor_DistributorDBErrors" time="0.680000"></testcase>
+	</testsuite>
+	<testsuite tests="16" failures="0" time="21.930000" name="github.com/circleci/distributor/e2e">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestDownloader_Download/First_cold_download" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestDownloader_Download/Second_cold_download" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestDownloader_Download/Cached_download" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestDownloader_Download/Not_found" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestDownloader_Download" time="0.050000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestHappy/fixture_setup" time="7.290000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestHappy/start_distributor" time="0.110000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestHappy/get_a_token" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestHappy/start_launch-agent" time="2.200000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestHappy/submit_job" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestHappy/authenticate_job_by_build_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestHappy/wait_for_task_to_complete" time="0.480000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestHappy/make_sure_we_got_a_runner" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestHappy/confirm_token_cant_auth_for_the_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestHappy/check_task_outputs" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/e2e" name="TestHappy" time="11.690000"></testcase>
+	</testsuite>
+	<testsuite tests="2" failures="0" time="1.200000" name="github.com/circleci/distributor/gc">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/gc" name="TestCleanJobs" time="0.600000"></testcase>
+		<testcase classname="github.com/circleci/distributor/gc" name="TestCleanRunners" time="0.600000"></testcase>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/grpchelpers">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/internal/testing/circleapistub">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/internal/testing/contextsapistub">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/internal/testing/dbfixture">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/internal/testing/fake">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/internal/testing/orbservicestub">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/internal/testing/outputstub">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/internal/testing/permissionapistub">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/internal/testing/plansapistub">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="3" failures="0" time="0.200000" name="github.com/circleci/distributor/lru">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/lru" name="TestLRUExpirable_AddedCanBeFound" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/lru" name="TestLRUExpirable_ExpiresAfterMaxAge/expired_entry_is_removed" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/lru" name="TestLRUExpirable_ExpiresAfterMaxAge" time="0.200000"></testcase>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/migrations">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="1" failures="0" time="0.000000" name="github.com/circleci/distributor/orbservice">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/orbservice" name="TestClientOnRealOrbService" time="0.000000">
+			<skipped message="=== RUN   TestClientOnRealOrbService&#xA;    client_test.go:13: Only useful if you have brought up the orb service docker compose&#xA;--- SKIP: TestClientOnRealOrbService (0.00s)&#xA;"></skipped>
+		</testcase>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/outputprocessor">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="19" failures="0" time="0.070000" name="github.com/circleci/distributor/plans">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/plans" name="Test_AuthError_Error/no_reasons_provided_by_plans_service" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="Test_AuthError_Error/a_reason_provided_by_plans_service" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="Test_AuthError_Error/many_reasons_provided_by_plans_service" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="Test_AuthError_Error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="Test_IsAuthError" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="Test_IsO11yErrDoNotTraceAsError" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="Test_onlyExecutorUnauthorizedReason/test-plan-executor-unavailable" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="Test_onlyExecutorUnauthorizedReason/foo" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="Test_onlyExecutorUnauthorizedReason/test-plan-executor-unavailable,another-reason" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="Test_onlyExecutorUnauthorizedReason" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="Test_executorUnavailableAndResourceClassUnavailableReason/test-plan-executor-unavailable,test-plan-resource-class-unavailable" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="Test_executorUnavailableAndResourceClassUnavailableReason/test-plan-resource-class-unavailable" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="Test_executorUnavailableAndResourceClassUnavailableReason/foo" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="Test_executorUnavailableAndResourceClassUnavailableReason" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="TestClient_ExecutionAuthorized/is_authorized" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="TestClient_ExecutionAuthorized/runner_preview_with_executor-unavailable_reason" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="TestClient_ExecutionAuthorized/runner_preview_with_executor-unavailable_and_resource-class-unavailable_reason" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="TestClient_ExecutionAuthorized/runner_preview_with_a_different_reason" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/plans" name="TestClient_ExecutionAuthorized" time="0.040000"></testcase>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/plans/protocol">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="122" failures="0" time="0.020000" name="github.com/circleci/distributor/resource">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/valid_runner" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/valid_non_runner" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/valid_namespace_chars" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/valid_class_chars" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/valid_long_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/invalid_executor_too_long" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/invalid_executor" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/invalid_namespace_too_long" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/invalid_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/invalid_class_too_long" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/invalid_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/invalid_no_executor" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/invalid_too_many_executors" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/invalid_too_many_namespaces" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/invalid_missing_bits" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/invalid_namespace_not_runner" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/invalid_id_too_long" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/unknown_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/invalid_too_many_dots" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/valid_machine_sku" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID/invalid_image" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseResourceClassID" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/valid_runner" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/valid_non_runner" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/valid_namespace_chars" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/valid_class_chars" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/valid_long_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/invalid_executor_too_long" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/invalid_executor" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/invalid_namespace_too_long" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/invalid_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/invalid_class_too_long" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/invalid_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/invalid_no_executor" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/invalid_too_many_executors" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/invalid_too_many_namespaces" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/invalid_missing_bits" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/invalid_namespace_not_runner" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/invalid_id_too_long" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/unknown_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/invalid_too_many_dots" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/valid_machine_sku" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID/invalid_image" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseResourceClassID" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_ID_and_String/combo_0" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_ID_and_String/combo_1" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_ID_and_String/combo_2" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_ID_and_String/combo_3" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_ID_and_String/combo_4" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_ID_and_String/combo_5" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_ID_and_String/combo_6" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_ID_and_String" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Class/combo_0" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Class/combo_1" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Class/combo_2" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Class/combo_3" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Class/combo_4" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Class/combo_5" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Class/combo_6" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Executor" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Namespace/Valid" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Namespace/Invalid" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_HasNamespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_JSON/Non_Pointer" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_JSON/Pointer" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_JSON/SKU" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_JSON/Invalid" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_JSON/Invalid-type" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_JSON/Struct" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_JSON/Map_interface" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_JSON/Bad_JSON" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_JSON/Marshal_invalid_Class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_JSON" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Scan/Good_Runner_Scan" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Scan/Good_Scan" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Scan/Good_SKU_Scan" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Scan/not_runner" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Scan/Nil" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Scan/Empty_string" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Scan/Dodgy_string" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Scan/Bad_type" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Scan" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Value" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_Stringer" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestO11y" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_IsMachine/runner_executor_returns_false" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_IsMachine/docker_executor_returns_false" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_IsMachine/windows_executor_returns_true" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_IsMachine/windows_executor_with_namespace_returns_true" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_IsMachine/macos_executor_returns_true" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_IsMachine/macos_executor_with_namespace_returns_true" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_IsMachine/unknown_executor_returns_false" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestClass_IsMachine" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseRunnerClass/valid_runner_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseRunnerClass/valid_long_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseRunnerClass/invalid_id_too_long" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseRunnerClass/invalid_got_executor" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseRunnerClass/invalid_no_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseRunnerClass" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseNamespace/valid_runner" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseNamespace/invalid_has_executor" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseNamespace/invalid_has_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseNamespace/invalid_empty" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseNamespace/invalid_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestParseNamespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseNamespace/valid_runner" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseNamespace/invalid_has_executor" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseNamespace/invalid_has_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseNamespace/invalid_empty" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseNamespace/invalid_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestMustParseNamespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestNamespace_String/Good" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestNamespace_String/Only_exec" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestNamespace_String" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestNamespace_JSON/Non_Pointer" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestNamespace_JSON/Pointer" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestNamespace_JSON/Map_interface" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestNamespace_JSON/Marshal_invalid_Namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestNamespace_JSON" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resource" name="TestNamespace_Name" time="0.000000"></testcase>
+	</testsuite>
+	<testsuite tests="74" failures="0" time="7.330000" name="github.com/circleci/distributor/resourceclass">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryToken/new_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryToken/add_duplicate_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryToken/list_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryToken/remove_token" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryToken/remove_non_existing_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryToken" time="0.410000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClass/Add_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClass/Add_duplicate_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClass/get_resource_class/by_resource_class_id" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClass/get_resource_class/by_internal_id" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClass/get_resource_class/by_namespace/with_underscore" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClass/get_resource_class/by_namespace/with_percent" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClass/get_resource_class/by_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClass/get_resource_class" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClass/list_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClass" time="0.380000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClassIDByTokenID/token_and_resource_class_exist" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClassIDByTokenID/token_does_not_exist" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClassIDByTokenID" time="0.360000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClassByID/resource_class_does_not_exist" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryResourceClassByID" time="0.450000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryTokensByResourceClassID_NotFound/resource_class_id_does_not_exist" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestQueryTokensByResourceClassID_NotFound" time="0.460000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_CreateToken/success" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_CreateToken/rc_id_not_found" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_CreateToken" time="0.360000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_DeleteToken/good" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_DeleteToken/token_not_found" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_DeleteToken" time="0.250000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClass/Authorized/First_resourceClass_first_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClass/Authorized/First_resourceClass_second_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClass/Authorized/Second_resourceClass_just_one_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClass/Authorized/Robot_resourceClass" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClass/Authorized/Doll_resourceClass_first_token" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClass/Authorized/Doll_resourceClass_second_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClass/Authorized" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClass/Unauthorized/Unknown_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClass/Unauthorized/Empty_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClass/Unauthorized" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClass" time="0.440000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_OrgForResourceClass/Authorized/First_resourceClass_first_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_OrgForResourceClass/Authorized" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_OrgForResourceClass/Unauthorized/Unknown_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_OrgForResourceClass/Unauthorized" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_OrgForResourceClass" time="0.250000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_OrgForNamespace/Authorized/Normal" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_OrgForNamespace/Authorized/With_Underscore" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_OrgForNamespace/Authorized" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_OrgForNamespace/Unauthorized/Unknown_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_OrgForNamespace/Unauthorized" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_OrgForNamespace/Empty_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_OrgForNamespace" time="0.270000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ListResourceClasses/success" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ListResourceClasses/org_not_found" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ListResourceClasses" time="0.400000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClassIDFromToken/Good_token" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClassIDFromToken/Bad_token" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClassIDFromToken" time="0.340000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ListTokens/success" time="0.020000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ListTokens/rcid_not_found" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ListTokens" time="0.370000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClassIDForTokenID/Token_exists" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClassIDForTokenID/Token_does_not_exist" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_ResourceClassIDForTokenID" time="0.340000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_GetResourceClass/Resource_class_exists" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_GetResourceClass/Resource_class_does_not_exist" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_GetResourceClass" time="0.340000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_Limits/max_resource_classes" time="0.500000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_Limits/max_tokens" time="0.030000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_Limits" time="0.870000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_DeleteResourceClass/good_delete" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestStore_DeleteResourceClass" time="0.350000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestHadNoEffect" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/resourceclass" name="TestTokenAndHash" time="0.000000"></testcase>
+	</testsuite>
+	<testsuite tests="19" failures="0" time="2.520000" name="github.com/circleci/distributor/runner">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestRunners/Add_and_update_a_runner" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestRunners/Runner_without_name_won&#39;t_be_created" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestRunners/Runner_without_resource_class_won&#39;t_be_created" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestRunners" time="0.400000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestNilRunners" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestRunners_FindByResourceClass_NotFound/valid" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestRunners_FindByResourceClass_NotFound/valid_with_hyphens" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestRunners_FindByResourceClass_NotFound" time="0.370000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestRunners_FindByNamespace_NotFound/valid" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestRunners_FindByNamespace_NotFound/valid_with_hyphens" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestRunners_FindByNamespace_NotFound" time="0.270000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestQueryRunner_CreateOrUpdate/Multiple_runners_in_difference_namespaces" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestQueryRunner_CreateOrUpdate" time="0.360000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestQueryRunner_RecordUsed" time="0.370000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestQueryRunner_CreateOrUpdate_Update_runner" time="0.360000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestQueryRunner_FindByResourceClass/Can_find_by_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestQueryRunner_FindByResourceClass/Can&#39;t_find_unknown_resource_class" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestQueryRunner_FindByResourceClass/Runners_in_namespace" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/runner" name="TestQueryRunner_FindByResourceClass" time="0.370000"></testcase>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/scripts/claimtask">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/scripts/populatejobs">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="0" failures="0" time="0.000000" name="github.com/circleci/distributor/storage">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+	</testsuite>
+	<testsuite tests="1" failures="0" time="0.010000" name="github.com/circleci/distributor/taskevent">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/taskevent" name="TestForwardEvents" time="0.010000"></testcase>
+	</testsuite>
+	<testsuite tests="16" failures="0" time="0.060000" name="github.com/circleci/distributor/taskstorage">
+		<properties>
+			<property name="go.version" value="go1.16.6 linux/amd64"></property>
+		</properties>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestTaskStorage_PreSigned/artifacts" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestTaskStorage_PreSigned/test-results" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestTaskStorage_PreSigned/cache-save/good" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestTaskStorage_PreSigned/cache-save/conflict" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestTaskStorage_PreSigned/cache-save" time="0.010000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestTaskStorage_PreSigned/cache-restore" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestTaskStorage_PreSigned/workspace-upload" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestTaskStorage_PreSigned/workspace-download" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestTaskStorage_PreSigned" time="0.040000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestMapGRPCError/nil-custom-error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestMapGRPCError/nil" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestMapGRPCError/string-error" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestMapGRPCError/unauthenticated" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestMapGRPCError/exists" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestMapGRPCError/not-found" time="0.000000"></testcase>
+		<testcase classname="github.com/circleci/distributor/taskstorage" name="TestMapGRPCError" time="0.000000"></testcase>
+	</testsuite>
+</testsuites>

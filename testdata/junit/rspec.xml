@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="65" failures="0" errors="0" time="8.518866" timestamp="2014-10-28T05:00:31+00:00">
+  <properties/>
+  <testcase classname="spec.feature.user.login_spec" name="User on the homepage when already registeered is redirected to dashboard" file="./spec/feature/user/login_spec.rb" time="7.938738"/>
+  <testcase classname="spec.controllers.orders_controller_spec" name="OrdersController should not be pending" file="./spec/controllers/orders_controller_spec.rb" time="0.000016">
+    <skipped/>
+  </testcase>
+  <testcase classname="spec.models.shopify_auth_spec" name="ShopifyAuth#save creates webhooks for the user" file="./spec/models/shopify_auth_spec.rb" time="0.005805">
+    <failure message="expected: 5
+     got: 4 (using ==)" type="RSpec::Expectations::ExpectationNotMetError">
+      <![CDATA[expected: 5
+     got: 4 (using ==)
+./spec/models/shopify_auth_spec.rb:6:in `block (2 levels) in <top (required)>']]>
+    </failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="circle.backend.container-fs.test-image" errors="0" tests="2" failures="0" elapsed="0.401">
+    <testcase name="load-image-tests-checksum" time="0.205"></testcase>
+    <testcase name="the-current-lxc-image-exists-in-s3" time="0.196"></testcase>
+</testsuite>

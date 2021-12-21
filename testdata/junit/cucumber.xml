@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite failures="3" errors="0" skipped="0" tests="3" time="64.215267" name="Number Port">
+    <testcase classname="Number Port" name="Request a number port" time="22.941121">
+        <failure message="failed Request a number port" type="failed">
+            <![CDATA[Scenario: Request a number port
+
+Then a number port is successfully requested
+
+Message:
+]]>
+            <![CDATA[Unable to find css "h2" (Capybara::ElementNotFound)
+./features/step_definitions/number_port_steps.rb:39:in `"a number port is successfully requested"'
+features/number_port.feature:10:in `Then a number port is successfully requested']]>
+        </failure>
+        <system-out>
+            <![CDATA[]]>
+        </system-out>
+        <system-err>
+            <![CDATA[]]>
+        </system-err>
+    </testcase>
+    <testcase classname="Number Port" name="Request a number port at time of SIM activation" time="20.716323">
+        <failure message="failed Request a number port at time of SIM activation" type="failed">
+            <![CDATA[Scenario: Request a number port at time of SIM activation
+
+When the activating customer provides their PAC code
+
+Message:
+]]>
+            <![CDATA[Unable to find button "Yes, I've got a PAC code" that is not disabled (Capybara::ElementNotFound)
+./features/step_definitions/number_port_steps.rb:107:in `"the activating customer provides their PAC code"'
+features/number_port.feature:18:in `When the activating customer provides their PAC code']]>
+        </failure>
+        <system-out>
+            <![CDATA[]]>
+        </system-out>
+        <system-err>
+            <![CDATA[]]>
+        </system-err>
+    </testcase>
+    <testcase classname="Number Port" name="Request a number port at time of SIM activation" time="20.557822">
+        <failure message="failed Request a number port at time of SIM activation" type="failed">
+            <![CDATA[Scenario: Request a number port at time of SIM activation
+
+When the activating customer provides their STAC code
+
+Message:
+]]>
+            <![CDATA[Unable to find button "Yes, I've got a STAC code" that is not disabled (Capybara::ElementNotFound)
+./features/step_definitions/number_port_steps.rb:140:in `"the activating customer provides their STAC code"'
+features/number_port.feature:26:in `When the activating customer provides their STAC code']]>
+        </failure>
+        <system-out>
+            <![CDATA[]]>
+        </system-out>
+        <system-err>
+            <![CDATA[]]>
+        </system-err>
+    </testcase>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='GameTests.xctest' tests='3' failures='0'>
+  <testsuite name='GameUITests.GameUITests' tests='1' failures='0'>
+    <testcase classname='GameUITests.GameUITests' name='testExample' time='3.852'/>
+  </testsuite>
+  <testsuite name='GameTests.GameTests' tests='2' failures='0'>
+    <testcase classname='GameTests.GameTests' name='testExample' time='0.001'/>
+    <testcase classname='GameTests.GameTests' name='testPerformanceExample' time='0.339'/>
+  </testsuite>
+</testsuites>

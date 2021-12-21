@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="circle.backend.lxc.test-config" errors="0" tests="1" failures="0" elapsed="0.006">
+    <testcase name="lxc-config-str-works" time="0.006"></testcase>
+</testsuite>

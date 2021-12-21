@@ -1,0 +1,391 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites tests='244' failures='42'>
+  <testsuite name='AMRAPParserTests' tests='1' failures='0'>
+    <testcase classname='AMRAPParserTests' name='testAMRAPBasic' time='0.044'/>
+  </testsuite>
+  <testsuite name='AdvancedIntervalTimingTests' tests='5' failures='0'>
+    <testcase classname='AdvancedIntervalTimingTests' name='testCouchTo5kAsWorkRest' time='0.061'/>
+    <testcase classname='AdvancedIntervalTimingTests' name='testCouchTo5kAsWorkWork' time='0.006'/>
+    <testcase classname='AdvancedIntervalTimingTests' name='testCouchTo5kLarge' time='0.017'/>
+    <testcase classname='AdvancedIntervalTimingTests' name='testSprintIntervals' time='0.006'/>
+    <testcase classname='AdvancedIntervalTimingTests' name='testYoyo' time='0.173'/>
+  </testsuite>
+  <testsuite name='BaseTimingTests' tests='3' failures='0'>
+    <testcase classname='BaseTimingTests' name='testSayTimeLessThan101' time='0.006'/>
+    <testcase classname='BaseTimingTests' name='testSayTimePartMinutes' time='0.361'/>
+    <testcase classname='BaseTimingTests' name='testSayTimeWholeMinutes' time='0.004'/>
+  </testsuite>
+  <testsuite name='CircuitParserTests' tests='4' failures='0'>
+    <testcase classname='CircuitParserTests' name='testCircuitParserABC' time='0.030'/>
+    <testcase classname='CircuitParserTests' name='testCircuitParserBasic' time='0.023'/>
+    <testcase classname='CircuitParserTests' name='testCircuitParserFull' time='0.010'/>
+    <testcase classname='CircuitParserTests' name='testCircuitParserNextLine' time='0.011'/>
+  </testsuite>
+  <testsuite name='CircuitTimingTests' tests='3' failures='0'>
+    <testcase classname='CircuitTimingTests' name='testCircuit1' time='0.041'/>
+    <testcase classname='CircuitTimingTests' name='testCountdown' time='0.007'/>
+    <testcase classname='CircuitTimingTests' name='testNoOverlaps' time='3.214'/>
+  </testsuite>
+  <testsuite name='ComplexParserTests' tests='5' failures='0'>
+    <testcase classname='ComplexParserTests' name='testComplexParserBasic' time='0.065'/>
+    <testcase classname='ComplexParserTests' name='testComplexParserNoDefaultsOrSets' time='0.008'/>
+    <testcase classname='ComplexParserTests' name='testComplexParserNoNextLine' time='0.009'/>
+    <testcase classname='ComplexParserTests' name='testComplexParserNoPrefix' time='0.009'/>
+    <testcase classname='ComplexParserTests' name='testComplexParserPrefix' time='0.013'/>
+  </testsuite>
+  <testsuite name='ComplexTimingTests' tests='2' failures='0'>
+    <testcase classname='ComplexTimingTests' name='testComplex1' time='0.046'/>
+    <testcase classname='ComplexTimingTests' name='testNoOverlaps' time='4.788'/>
+  </testsuite>
+  <testsuite name='CountingTimingTests' tests='9' failures='0'>
+    <testcase classname='CountingTimingTests' name='testCounting1' time='0.007'/>
+    <testcase classname='CountingTimingTests' name='testCounting2' time='0.109'/>
+    <testcase classname='CountingTimingTests' name='testCountingLessThan101SecondsRest' time='0.339'/>
+    <testcase classname='CountingTimingTests' name='testCountingNoDoubleRests' time='0.007'/>
+    <testcase classname='CountingTimingTests' name='testCountingNoDoubleRests2' time='0.013'/>
+    <testcase classname='CountingTimingTests' name='testCountingNoDoubleRests3' time='0.009'/>
+    <testcase classname='CountingTimingTests' name='testCountingPartMinutes' time='10.959'/>
+    <testcase classname='CountingTimingTests' name='testCountingWholeMinutes' time='0.208'/>
+    <testcase classname='CountingTimingTests' name='testNoOverlaps' time='0.007'/>
+  </testsuite>
+  <testsuite name='EmomParserTests' tests='20' failures='8'>
+    <testcase classname='EmomParserTests' name='testEmomParseCountdownDefault' time='0.027'/>
+    <testcase classname='EmomParserTests' name='testEmomParseCountdownSet' time='0.016'/>
+    <testcase classname='EmomParserTests' name='testEmomParseCountdownSetAlternate' time='0.016'/>
+    <testcase classname='EmomParserTests' name='testEmomParseExcercises' time='0.014'/>
+    <testcase classname='EmomParserTests' name='testEmomParseInlineLoad'>
+      <failure message='(([[(ExerciseDataModel *)[[emom exerciseList] objectAtIndex: 0] load] isEqualToString: @&quot;4.54&quot;]) is true) failed'>timingTests/EmomParserTests.m:56</failure>
+    </testcase>
+    <testcase classname='EmomParserTests' name='testEmomParseInlineLoad'>
+      <failure message='(([[(ExerciseDataModel *)[[emom exerciseList] objectAtIndex: 1] load] isEqualToString: @&quot;60&quot;]) is true) failed'>timingTests/EmomParserTests.m:57</failure>
+    </testcase>
+    <testcase classname='EmomParserTests' name='testEmomParseLink' time='0.162'/>
+    <testcase classname='EmomParserTests' name='testEmomParseMinutes' time='0.008'/>
+    <testcase classname='EmomParserTests' name='testEmomParseMisc' time='0.017'/>
+    <testcase classname='EmomParserTests' name='testEmomParseNumbered'>
+      <failure message='(([[(ExerciseDataModel *)[[emom exerciseList] objectAtIndex: 1] load] isEqualToString: @&quot;60&quot;]) is true) failed'>timingTests/EmomParserTests.m:134</failure>
+    </testcase>
+    <testcase classname='EmomParserTests' name='testEmomParseNumbered'>
+      <failure message='(([[[[emom exerciseList] objectAtIndex: 1] loadUnits] isEqualToString: @&quot;kg&quot;]) is true) failed'>timingTests/EmomParserTests.m:135</failure>
+    </testcase>
+    <testcase classname='EmomParserTests' name='testEmomParseOption'>
+      <failure message='(([[[[emom exerciseList] objectAtIndex: 1] loadUnits] isEqualToString: @&quot;kg&quot;]) is true) failed'>timingTests/EmomParserTests.m:93</failure>
+    </testcase>
+    <testcase classname='EmomParserTests' name='testEmomParseSingleLoad'>
+      <failure message='(([[(ExerciseDataModel *)[[emom exerciseList] objectAtIndex: 1] load] isEqualToString: @&quot;60&quot;]) is true) failed'>timingTests/EmomParserTests.m:123</failure>
+    </testcase>
+    <testcase classname='EmomParserTests' name='testEmomParseSingleLoad'>
+      <failure message='(([[[[emom exerciseList] objectAtIndex: 1] loadUnits] isEqualToString: @&quot;kg&quot;]) is true) failed'>timingTests/EmomParserTests.m:124</failure>
+    </testcase>
+    <testcase classname='EmomParserTests' name='testEmomParseVideo' time='0.011'/>
+    <testcase classname='EmomParserTests' name='testEmomParseWork' time='0.010'/>
+    <testcase classname='EmomParserTests' name='testEmomWithAB' time='0.011'/>
+    <testcase classname='EmomParserTests' name='testNumber' time='0.006'/>
+    <testcase classname='EmomParserTests' name='testNumberThenWeight'>
+      <failure message='(([[(ExerciseDataModel *)[emom.exerciseList lastObject] load] isEqualToString: @&quot;75.28&quot;]) is true) failed'>timingTests/EmomParserTests.m:184</failure>
+    </testcase>
+    <testcase classname='EmomParserTests' name='testRandom' time='0.868'/>
+  </testsuite>
+  <testsuite name='EmomTimingTests' tests='7' failures='0'>
+    <testcase classname='EmomTimingTests' name='testEmom' time='0.006'/>
+    <testcase classname='EmomTimingTests' name='testEmom2' time='0.004'/>
+    <testcase classname='EmomTimingTests' name='testEmom3' time='0.003'/>
+    <testcase classname='EmomTimingTests' name='testEmomBuildTime' time='3.576'/>
+    <testcase classname='EmomTimingTests' name='testEmomNextUpLastMinute' time='0.349'/>
+    <testcase classname='EmomTimingTests' name='testEmomNoDoubleSeconds' time='0.003'/>
+    <testcase classname='EmomTimingTests' name='testNoOverlaps' time='0.758'/>
+  </testsuite>
+  <testsuite name='ExerciseParserTests' tests='14' failures='6'>
+    <testcase classname='ExerciseParserTests' name='testExerciseGeneral' time='0.008'/>
+    <testcase classname='ExerciseParserTests' name='testExerciseLoad'>
+      <failure message='(([[(ExerciseDataModel *)[[tempo exerciseList] lastObject] load] isEqualToString: @&quot;60&quot;]) is true) failed'>timingTests/ExerciseParserTests.m:66</failure>
+    </testcase>
+    <testcase classname='ExerciseParserTests' name='testExerciseLoadUnit'>
+      <failure message='(([[[[tempo exerciseList] lastObject] loadUnits] isEqualToString: @&quot;kg&quot;]) is true) failed'>timingTests/ExerciseParserTests.m:77</failure>
+    </testcase>
+    <testcase classname='ExerciseParserTests' name='testExerciseSecondsPerRep' time='0.004'/>
+    <testcase classname='ExerciseParserTests' name='testExerciseSecondsPerRep2' time='0.005'/>
+    <testcase classname='ExerciseParserTests' name='testExerciseSecondsPerRep3' time='0.007'/>
+    <testcase classname='ExerciseParserTests' name='testExerciseSecondsPerRep4' time='0.004'/>
+    <testcase classname='ExerciseParserTests' name='testExerciseSecondsPerRep5' time='0.005'/>
+    <testcase classname='ExerciseParserTests' name='testExerciseSecondsPerRep6' time='0.004'/>
+    <testcase classname='ExerciseParserTests' name='testExerciseSecondsPlank' time='0.003'/>
+    <testcase classname='ExerciseParserTests' name='testMultipleExerciseParserBasic'>
+      <failure message='(([[(ExerciseDataModel *)[[first exerciseList] lastObject] load] isEqualToString:@&quot;20&quot;]) is true) failed'>timingTests/ExerciseParserTests.m:97</failure>
+    </testcase>
+    <testcase classname='ExerciseParserTests' name='testMultipleExerciseParserBasic'>
+      <failure message='(([[(ExerciseDataModel *)[[last exerciseList] lastObject] load] isEqualToString:@&quot;10&quot;]) is true) failed'>timingTests/ExerciseParserTests.m:98</failure>
+    </testcase>
+    <testcase classname='ExerciseParserTests' name='testMultipleExerciseParserBasic'>
+      <failure message='(([[(ExerciseDataModel *)[[first exerciseList] lastObject] loadUnits] isEqualToString:@&quot;kg&quot;]) is true) failed'>timingTests/ExerciseParserTests.m:99</failure>
+    </testcase>
+    <testcase classname='ExerciseParserTests' name='testMultipleExerciseParserBasic'>
+      <failure message='(([[(ExerciseDataModel *)[[last exerciseList] lastObject] loadUnits] isEqualToString:@&quot;kg&quot;]) is true) failed'>timingTests/ExerciseParserTests.m:100</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name='ExercisesTest' tests='1' failures='0'>
+    <testcase classname='ExercisesTest' name='testExample' time='0.335'/>
+  </testsuite>
+  <testsuite name='ForTimeParserTests' tests='1' failures='0'>
+    <testcase classname='ForTimeParserTests' name='testForTimeBasic' time='0.005'/>
+  </testsuite>
+  <testsuite name='IntervalParserTests' tests='17' failures='4'>
+    <testcase classname='IntervalParserTests' name='testIntervalGeneral' time='0.005'/>
+    <testcase classname='IntervalParserTests' name='testIntervalJoe' time='0.002'/>
+    <testcase classname='IntervalParserTests' name='testIntervalMaxCount' time='0.003'/>
+    <testcase classname='IntervalParserTests' name='testIntervalParseCount' time='0.002'/>
+    <testcase classname='IntervalParserTests' name='testIntervalParseInterval' time='0.007'/>
+    <testcase classname='IntervalParserTests' name='testIntervalParseLoad'>
+      <failure message='(([[(ExerciseDataModel *)[[interval exerciseList] objectAtIndex: 0] load] isEqualToString: @&quot;60&quot;]) is true) failed'>timingTests/IntervalParserTests.m:107</failure>
+    </testcase>
+    <testcase classname='IntervalParserTests' name='testIntervalParseLoadUnits'>
+      <failure message='(([[[[interval exerciseList] objectAtIndex: 0] loadUnits] isEqualToString: @&quot;kg&quot;]) is true) failed'>timingTests/IntervalParserTests.m:97</failure>
+    </testcase>
+    <testcase classname='IntervalParserTests' name='testIntervalParseMove' time='0.002'/>
+    <testcase classname='IntervalParserTests' name='testIntervalParseOn' time='0.005'/>
+    <testcase classname='IntervalParserTests' name='testIntervalParseRest' time='0.006'/>
+    <testcase classname='IntervalParserTests' name='testIntervals' time='0.017'/>
+    <testcase classname='IntervalParserTests' name='testIntervalsAlternate1' time='0.015'/>
+    <testcase classname='IntervalParserTests' name='testIntervalsAlternate2'>
+      <failure message='(([dm.load isEqualToString: @&quot;12.5&quot;]) is true) failed'>timingTests/IntervalParserTests.m:218</failure>
+    </testcase>
+    <testcase classname='IntervalParserTests' name='testIntervalsAlternate2'>
+      <failure message='(([dm.loadUnits isEqualToString: @&quot;kg&quot;]) is true) failed'>timingTests/IntervalParserTests.m:219</failure>
+    </testcase>
+    <testcase classname='IntervalParserTests' name='testIntervalsAlternate3' time='0.050'/>
+    <testcase classname='IntervalParserTests' name='testIntervalsCaps' time='0.022'/>
+    <testcase classname='IntervalParserTests' name='testIntervalsRestSuffix' time='18.584'/>
+  </testsuite>
+  <testsuite name='IntervalTimingTests' tests='6' failures='0'>
+    <testcase classname='IntervalTimingTests' name='testInterval1' time='0.021'/>
+    <testcase classname='IntervalTimingTests' name='testInterval2' time='0.099'/>
+    <testcase classname='IntervalTimingTests' name='testInterval3' time='0.220'/>
+    <testcase classname='IntervalTimingTests' name='testIntervalRests' time='0.266'/>
+    <testcase classname='IntervalTimingTests' name='testNoOverlaps' time='0.550'/>
+    <testcase classname='IntervalTimingTests' name='testTabataNoDoubleRests' time='0.003'/>
+  </testsuite>
+  <testsuite name='JsonSerialisationTest' tests='15' failures='0'>
+    <testcase classname='JsonSerialisationTest' name='testAdvancedInterval' time='0.026'/>
+    <testcase classname='JsonSerialisationTest' name='testAdvancedIntervalInsideWorkout' time='0.007'/>
+    <testcase classname='JsonSerialisationTest' name='testAssertions' time='0.001'/>
+    <testcase classname='JsonSerialisationTest' name='testBaseTimingProperties' time='0.005'/>
+    <testcase classname='JsonSerialisationTest' name='testComplexCommand' time='0.008'/>
+    <testcase classname='JsonSerialisationTest' name='testComplexInsideWorkout' time='0.002'/>
+    <testcase classname='JsonSerialisationTest' name='testComplexParsed' time='0.018'/>
+    <testcase classname='JsonSerialisationTest' name='testComplexTiming' time='0.001'/>
+    <testcase classname='JsonSerialisationTest' name='testCountdown' time='0.001'/>
+    <testcase classname='JsonSerialisationTest' name='testCounting' time='0.001'/>
+    <testcase classname='JsonSerialisationTest' name='testEmom' time='0.001'/>
+    <testcase classname='JsonSerialisationTest' name='testExercise' time='0.001'/>
+    <testcase classname='JsonSerialisationTest' name='testExerciseDataModel' time='0.002'/>
+    <testcase classname='JsonSerialisationTest' name='testInterval' time='0.002'/>
+    <testcase classname='JsonSerialisationTest' name='testTabata' time='0.001'/>
+  </testsuite>
+  <testsuite name='OverlayTest' tests='1' failures='0'>
+    <testcase classname='OverlayTest' name='testExample' time='0.005'/>
+  </testsuite>
+  <testsuite name='ProgrammeParserTests' tests='3' failures='0'>
+    <testcase classname='ProgrammeParserTests' name='testProgrammeParserGeneral' time='0.160'/>
+    <testcase classname='ProgrammeParserTests' name='testProgrammePhase' time='0.085'/>
+    <testcase classname='ProgrammeParserTests' name='testProgrammeWithWorkouts' time='1.853'/>
+  </testsuite>
+  <testsuite name='PyramidParserTests' tests='7' failures='6'>
+    <testcase classname='PyramidParserTests' name='testPyramidParserBasic' time='0.002'/>
+    <testcase classname='PyramidParserTests' name='testPyramidParserOneLoad'>
+      <failure message='(([[(ComplexCommand *)[[complex exerciseList] objectAtIndex: 0] load] isEqualToString: @&quot;3&quot;]) is true) failed'>timingTests/PyramidParserTests.m:84</failure>
+    </testcase>
+    <testcase classname='PyramidParserTests' name='testPyramidParserOneLoad'>
+      <failure message='(([[(ComplexCommand *)[[complex exerciseList] objectAtIndex: 2] load] isEqualToString: @&quot;3&quot;]) is true) failed'>timingTests/PyramidParserTests.m:86</failure>
+    </testcase>
+    <testcase classname='PyramidParserTests' name='testPyramidParserOneLoad'>
+      <failure message='(([[(ComplexCommand *)[[complex exerciseList] objectAtIndex: 1] loadUnits] isEqualToString: @&quot;kg&quot;]) is true) failed'>timingTests/PyramidParserTests.m:89</failure>
+    </testcase>
+    <testcase classname='PyramidParserTests' name='testPyramidParserOneRep'>
+      <failure message='(([[(ComplexCommand *)[[complex exerciseList] objectAtIndex: 0] load] isEqualToString: @&quot;10&quot;]) is true) failed'>timingTests/PyramidParserTests.m:65</failure>
+    </testcase>
+    <testcase classname='PyramidParserTests' name='testPyramidParserOneRep'>
+      <failure message='(([[(ComplexCommand *)[[complex exerciseList] objectAtIndex: 2] load] isEqualToString: @&quot;2&quot;]) is true) failed'>timingTests/PyramidParserTests.m:67</failure>
+    </testcase>
+    <testcase classname='PyramidParserTests' name='testPyramidParserOneRep'>
+      <failure message='(([[(ComplexCommand *)[[complex exerciseList] objectAtIndex: 1] loadUnits] isEqualToString: @&quot;kg&quot;]) is true) failed'>timingTests/PyramidParserTests.m:70</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name='RuleParserTests' tests='13' failures='6'>
+    <testcase classname='RuleParserTests' name='testCount' time='0.054'/>
+    <testcase classname='RuleParserTests' name='testEmomTime' time='0.002'/>
+    <testcase classname='RuleParserTests' name='testExerciseRule' time='0.007'/>
+    <testcase classname='RuleParserTests' name='testExercisesRule'>
+      <failure message='(([[(ExerciseDataModel *)[[dummy exerciseList] lastObject] load] isEqualToString:@&quot;40&quot;]) is true) failed'>timingTests/RuleParserTests.m:281</failure>
+    </testcase>
+    <testcase classname='RuleParserTests' name='testExercisesRule'>
+      <failure message='(([[[[dummy exerciseList] lastObject] loadUnits] isEqualToString:@&quot;kg&quot;]) is true) failed'>timingTests/RuleParserTests.m:282</failure>
+    </testcase>
+    <testcase classname='RuleParserTests' name='testExercisesRule'>
+      <failure message='(([[(ExerciseDataModel *)[[dummy exerciseList] lastObject] load] isEqualToString:@&quot;40&quot;]) is true) failed'>timingTests/RuleParserTests.m:292</failure>
+    </testcase>
+    <testcase classname='RuleParserTests' name='testExercisesRule'>
+      <failure message='(([[[[dummy exerciseList] lastObject] loadUnits] isEqualToString:@&quot;kg&quot;]) is true) failed'>timingTests/RuleParserTests.m:293</failure>
+    </testcase>
+    <testcase classname='RuleParserTests' name='testExercisesRule'>
+      <failure message='(([[(ExerciseDataModel *)[[dummy exerciseList] lastObject] load] isEqualToString:@&quot;40&quot;]) is true) failed'>timingTests/RuleParserTests.m:303</failure>
+    </testcase>
+    <testcase classname='RuleParserTests' name='testExercisesRule'>
+      <failure message='(([[[[dummy exerciseList] lastObject] loadUnits] isEqualToString:@&quot;kg&quot;]) is true) failed'>timingTests/RuleParserTests.m:304</failure>
+    </testcase>
+    <testcase classname='RuleParserTests' name='testIntervalAndTabataInterval' time='0.017'/>
+    <testcase classname='RuleParserTests' name='testLevel' time='0.003'/>
+    <testcase classname='RuleParserTests' name='testTempoRepSpec' time='0.002'/>
+    <testcase classname='RuleParserTests' name='testTempoSetRest' time='0.001'/>
+  </testsuite>
+  <testsuite name='TabataParserTests' tests='12' failures='2'>
+    <testcase classname='TabataParserTests' name='testTabataGeneral' time='0.005'/>
+    <testcase classname='TabataParserTests' name='testTabataMaxCount' time='0.003'/>
+    <testcase classname='TabataParserTests' name='testTabataParseCount' time='0.010'/>
+    <testcase classname='TabataParserTests' name='testTabataParseIntervalSpecified' time='0.003'/>
+    <testcase classname='TabataParserTests' name='testTabataParseIntervalUnSpec' time='0.003'/>
+    <testcase classname='TabataParserTests' name='testTabataParseLoad'>
+      <failure message='(([[(ExerciseDataModel *)[[tabata exerciseList] objectAtIndex: 0] load] isEqualToString: @&quot;60&quot;]) is true) failed'>timingTests/TabataParserTests.m:121</failure>
+    </testcase>
+    <testcase classname='TabataParserTests' name='testTabataParseLoadUnits'>
+      <failure message='(([[[[tabata exerciseList] objectAtIndex: 0] loadUnits] isEqualToString: @&quot;kg&quot;]) is true) failed'>timingTests/TabataParserTests.m:107</failure>
+    </testcase>
+    <testcase classname='TabataParserTests' name='testTabataParseMove' time='0.002'/>
+    <testcase classname='TabataParserTests' name='testTabataParseOnSpecified' time='0.009'/>
+    <testcase classname='TabataParserTests' name='testTabataParseOnUnSpec' time='0.008'/>
+    <testcase classname='TabataParserTests' name='testTabataParseRestSpecified' time='0.004'/>
+    <testcase classname='TabataParserTests' name='testTabataParseRestUnSpec' time='0.003'/>
+  </testsuite>
+  <testsuite name='TempoParserTests' tests='7' failures='2'>
+    <testcase classname='TempoParserTests' name='testMultipleTempoBasic' time='0.005'/>
+    <testcase classname='TempoParserTests' name='testMultipleTempoBasic2' time='0.006'/>
+    <testcase classname='TempoParserTests' name='testTempoExerciseFail' time='0.003'/>
+    <testcase classname='TempoParserTests' name='testTempoGeneral' time='0.024'/>
+    <testcase classname='TempoParserTests' name='testTempoLoad'>
+      <failure message='(([[(ExerciseDataModel *)[[tempo exerciseList] lastObject] load] isEqualToString: @&quot;60&quot;]) is true) failed'>timingTests/TempoParserTests.m:101</failure>
+    </testcase>
+    <testcase classname='TempoParserTests' name='testTempoLoadUnit'>
+      <failure message='(([[[[tempo exerciseList] lastObject] loadUnits] isEqualToString: @&quot;kg&quot;]) is true) failed'>timingTests/TempoParserTests.m:112</failure>
+    </testcase>
+    <testcase classname='TempoParserTests' name='testTempoString' time='0.003'/>
+  </testsuite>
+  <testsuite name='TempoTimingTests' tests='4' failures='0'>
+    <testcase classname='TempoTimingTests' name='testCountingLessThan101SecondsRest' time='0.139'/>
+    <testcase classname='TempoTimingTests' name='testCountingPartMinutes' time='7.255'/>
+    <testcase classname='TempoTimingTests' name='testCountingWholeMinutes' time='0.088'/>
+    <testcase classname='TempoTimingTests' name='testNoOverlaps' time='0.077'/>
+  </testsuite>
+  <testsuite name='TimesTest' tests='2' failures='0'>
+    <testcase classname='TimesTest' name='testFormatting' time='0.001'/>
+    <testcase classname='TimesTest' name='testParsing' time='0.004'/>
+  </testsuite>
+  <testsuite name='UISimulationTests' tests='1' failures='0'>
+    <testcase classname='UISimulationTests' name='test00ExerciseForm' time='0.001'/>
+  </testsuite>
+  <testsuite name='VoicesTest' tests='3' failures='2'>
+    <testcase classname='VoicesTest' name='testAllMethodsHaveDuration' time='0.012'/>
+    <testcase classname='VoicesTest' name='testAllMethodsHaveFilesWeCanAccess'>
+      <failure message='((found) is true) failed'>timingTests/VoicesTest.m:79</failure>
+    </testcase>
+    <testcase classname='VoicesTest' name='testAllMethodsHaveFilesWeCanAccess'>
+      <failure message='((found) is true) failed'>timingTests/VoicesTest.m:79</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name='WarmdownParserTests' tests='13' failures='3'>
+    <testcase classname='WarmdownParserTests' name='testWarmdownEmpty' time='0.001'/>
+    <testcase classname='WarmdownParserTests' name='testWarmdownEmptyNextExercise' time='0.001'/>
+    <testcase classname='WarmdownParserTests' name='testWarmdownParseExcercises' time='0.005'/>
+    <testcase classname='WarmdownParserTests' name='testWarmdownParseInlineLoad'>
+      <failure message='(([[(ExerciseDataModel *)[[warmdown exerciseList] objectAtIndex: 0] load] isEqualToString: @&quot;10&quot;]) is true) failed'>timingTests/WarmdownParserTests.m:54</failure>
+    </testcase>
+    <testcase classname='WarmdownParserTests' name='testWarmdownParseInlineLoad'>
+      <failure message='(([[(ExerciseDataModel *)[[warmdown exerciseList] objectAtIndex: 1] load] isEqualToString: @&quot;60&quot;]) is true) failed'>timingTests/WarmdownParserTests.m:55</failure>
+    </testcase>
+    <testcase classname='WarmdownParserTests' name='testWarmdownParseLink' time='0.004'/>
+    <testcase classname='WarmdownParserTests' name='testWarmdownParseMemory' time='6.891'/>
+    <testcase classname='WarmdownParserTests' name='testWarmdownParseMinutes' time='0.069'/>
+    <testcase classname='WarmdownParserTests' name='testWarmdownParseMisc' time='0.764'/>
+    <testcase classname='WarmdownParserTests' name='testWarmdownParseOption'>
+      <failure message='(([[[[warmdown exerciseList] objectAtIndex: 1] loadUnits] isEqualToString: @&quot;kg&quot;]) is true) failed'>timingTests/WarmdownParserTests.m:91</failure>
+    </testcase>
+    <testcase classname='WarmdownParserTests' name='testWarmdownParseVideo' time='0.018'/>
+    <testcase classname='WarmdownParserTests' name='testWarmdownParseWork' time='0.011'/>
+    <testcase classname='WarmdownParserTests' name='testWarmupWithAB' time='0.005'/>
+  </testsuite>
+  <testsuite name='WarmupParserTests' tests='13' failures='3'>
+    <testcase classname='WarmupParserTests' name='testWarmupEmpty' time='0.002'/>
+    <testcase classname='WarmupParserTests' name='testWarmupEmptyNextExercise' time='0.001'/>
+    <testcase classname='WarmupParserTests' name='testWarmupParseExcercises' time='0.022'/>
+    <testcase classname='WarmupParserTests' name='testWarmupParseInlineLoad'>
+      <failure message='(([[(ExerciseDataModel *)[[warmup exerciseList] objectAtIndex: 0] load] isEqualToString: @&quot;10&quot;]) is true) failed'>timingTests/WarmupParserTests.m:51</failure>
+    </testcase>
+    <testcase classname='WarmupParserTests' name='testWarmupParseInlineLoad'>
+      <failure message='(([[(ExerciseDataModel *)[[warmup exerciseList] objectAtIndex: 1] load] isEqualToString: @&quot;60&quot;]) is true) failed'>timingTests/WarmupParserTests.m:52</failure>
+    </testcase>
+    <testcase classname='WarmupParserTests' name='testWarmupParseLink' time='0.009'/>
+    <testcase classname='WarmupParserTests' name='testWarmupParseMemory' time='8.074'/>
+    <testcase classname='WarmupParserTests' name='testWarmupParseMinutes' time='0.044'/>
+    <testcase classname='WarmupParserTests' name='testWarmupParseMisc' time='0.030'/>
+    <testcase classname='WarmupParserTests' name='testWarmupParseOption'>
+      <failure message='(([[[[warmup exerciseList] objectAtIndex: 1] loadUnits] isEqualToString: @&quot;kg&quot;]) is true) failed'>timingTests/WarmupParserTests.m:88</failure>
+    </testcase>
+    <testcase classname='WarmupParserTests' name='testWarmupParseVideo' time='0.009'/>
+    <testcase classname='WarmupParserTests' name='testWarmupParseWork' time='0.010'/>
+    <testcase classname='WarmupParserTests' name='testWarmupWithAB' time='0.010'/>
+  </testsuite>
+  <testsuite name='WorkoutDataStorageTest' tests='8' failures='0'>
+    <testcase classname='WorkoutDataStorageTest' name='testBookmarking' time='0.127'/>
+    <testcase classname='WorkoutDataStorageTest' name='testDeleteWorkout' time='0.050'/>
+    <testcase classname='WorkoutDataStorageTest' name='testNewWorkoutData' time='2.466'/>
+    <testcase classname='WorkoutDataStorageTest' name='testPrograms' time='0.036'/>
+    <testcase classname='WorkoutDataStorageTest' name='testSaveAndGetWorkoutOrder' time='0.057'/>
+    <testcase classname='WorkoutDataStorageTest' name='testSaveAndGetWorkouts' time='0.030'/>
+    <testcase classname='WorkoutDataStorageTest' name='testSaveAndGetWorkoutsDeleted' time='0.025'/>
+    <testcase classname='WorkoutDataStorageTest' name='testSongDurations' time='0.031'/>
+  </testsuite>
+  <testsuite name='WorkoutParserTests' tests='44' failures='0'>
+    <testcase classname='WorkoutParserTests' name='test7MinuteWorkoutBeginner' time='0.031'/>
+    <testcase classname='WorkoutParserTests' name='test7MinuteWorkoutHard' time='0.044'/>
+    <testcase classname='WorkoutParserTests' name='test7MinuteWorkoutMedium' time='0.068'/>
+    <testcase classname='WorkoutParserTests' name='testAMRAPTitle' time='0.011'/>
+    <testcase classname='WorkoutParserTests' name='testBeginnersMassGainingRoutineMondayWeek1' time='0.045'/>
+    <testcase classname='WorkoutParserTests' name='testBeginnersMassGainingRoutineWednesdayWeek1' time='0.051'/>
+    <testcase classname='WorkoutParserTests' name='testComplex' time='0.017'/>
+    <testcase classname='WorkoutParserTests' name='testCouchTo5K' time='0.029'/>
+    <testcase classname='WorkoutParserTests' name='testEmptyName' time='0.003'/>
+    <testcase classname='WorkoutParserTests' name='testGreyskullMondayWeek1' time='0.052'/>
+    <testcase classname='WorkoutParserTests' name='testGreyskullWednesdayWeek1' time='0.066'/>
+    <testcase classname='WorkoutParserTests' name='testGreyskullWednesdayWeek1Alternate' time='0.075'/>
+    <testcase classname='WorkoutParserTests' name='testHIITPhase1' time='0.028'/>
+    <testcase classname='WorkoutParserTests' name='testHIITPhase2' time='0.019'/>
+    <testcase classname='WorkoutParserTests' name='testHIITPhase3' time='0.019'/>
+    <testcase classname='WorkoutParserTests' name='testHIITPhase4' time='0.018'/>
+    <testcase classname='WorkoutParserTests' name='testNFA' time='0.001'/>
+    <testcase classname='WorkoutParserTests' name='testParserCircuitTest' time='0.020'/>
+    <testcase classname='WorkoutParserTests' name='testParserEmomTest' time='0.028'/>
+    <testcase classname='WorkoutParserTests' name='testParserEmomTestAlternate1' time='0.024'/>
+    <testcase classname='WorkoutParserTests' name='testParserEmomTestAlternate2' time='0.024'/>
+    <testcase classname='WorkoutParserTests' name='testParserIntervalTest' time='0.039'/>
+    <testcase classname='WorkoutParserTests' name='testParserIntervalTestAlternate1' time='0.034'/>
+    <testcase classname='WorkoutParserTests' name='testParserJamesConditioning' time='0.104'/>
+    <testcase classname='WorkoutParserTests' name='testParserJamesConditioningAlternate1' time='0.080'/>
+    <testcase classname='WorkoutParserTests' name='testParserJamesConditioningAlternate2' time='0.093'/>
+    <testcase classname='WorkoutParserTests' name='testParserJamesConditioningAlternate3' time='0.094'/>
+    <testcase classname='WorkoutParserTests' name='testParserJamesConditioningAlternate4' time='0.093'/>
+    <testcase classname='WorkoutParserTests' name='testParserJamesWorkout' time='0.075'/>
+    <testcase classname='WorkoutParserTests' name='testParserJamesWorkoutAlternate1' time='0.084'/>
+    <testcase classname='WorkoutParserTests' name='testPullNewlineFix' time='0.141'/>
+    <testcase classname='WorkoutParserTests' name='testUpperCrush' time='0.116'/>
+    <testcase classname='WorkoutParserTests' name='testWorkoutEMOM' time='0.028'/>
+    <testcase classname='WorkoutParserTests' name='testWorkoutEMOMThen' time='0.021'/>
+    <testcase classname='WorkoutParserTests' name='testWorkoutFull' time='0.111'/>
+    <testcase classname='WorkoutParserTests' name='testWorkoutInterval' time='0.008'/>
+    <testcase classname='WorkoutParserTests' name='testWorkoutIntervalThen' time='0.013'/>
+    <testcase classname='WorkoutParserTests' name='testWorkoutIntervalThenWithComplex' time='0.026'/>
+    <testcase classname='WorkoutParserTests' name='testWorkoutJoe11November' time='0.111'/>
+    <testcase classname='WorkoutParserTests' name='testWorkoutParserGeneral' time='0.039'/>
+    <testcase classname='WorkoutParserTests' name='testWorkoutParserUnknownExercise' time='0.016'/>
+    <testcase classname='WorkoutParserTests' name='testWSB' time='0.080'/>
+    <testcase classname='WorkoutParserTests' name='testWSBDynamicLower' time='0.083'/>
+    <testcase classname='WorkoutParserTests' name='testWSBRepetitionUpper' time='0.056'/>
+  </testsuite>
+</testsuites>

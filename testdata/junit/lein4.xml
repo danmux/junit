@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="circle.test.test-junit" errors="0" tests="13" failures="0" elapsed="2.6979999999999995">
+    <testcase name="partition-into-works" time="0.125"></testcase>
+    <testcase name="drop-duplicates-works" time="0.125"></testcase>
+    <testcase name="partition-into-preserves-input-order" time="0.119"></testcase>
+    <testcase name="remove-indexed-works" time="0.122"></testcase>
+    <testcase name="insert-after-works" time="0.113"></testcase>
+    <testcase name="partition-into-always-returns-N-collections" time="0.122"></testcase>
+    <testcase name="insert-before-works" time="0.13"></testcase>
+    <testcase name="drop-duplicates-doesnt-hang-on-identical-seqs" time="0.114"></testcase>
+    <testcase name="insert-seq-after-works" time="0.124"></testcase>
+    <testcase name="junit-doesn't-break-return-code" time="1.224"></testcase>
+    <testcase name="failure-works" time="0.133"></testcase>
+    <testcase name="testsuite-works" time="0.126"></testcase>
+    <testcase name="testcase-works" time="0.121"></testcase>
+</testsuite>

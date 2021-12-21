@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite tests="20" failures="1" errors="0" time="0.246218" timestamp="2012-04-06T16:01:35-07:00">
+  <properties/>
+  <testcase classname="/home/steven/Code/installfest/spec/step_page_spec.rb" name="StepPage renders a step file" time="0.007110"/>
+  <testcase classname="/home/steven/Code/installfest/spec/steven_spec.rb" name="Don't add to Railsbridge fails so steven can see it" time="0.000198">
+    <failure message="expected: 5
+     got: 4 (using ==)" type="RSpec::Expectations::ExpectationNotMetError">
+      <![CDATA[expected: 5
+     got: 4 (using ==)
+./spec/steven_spec.rb:6:in `block (2 levels) in <top (required)>']]>
+    </failure>
+  </testcase>
+  <testcase classname="/home/steven/Code/installfest/spec/step_spec.rb" name="Step renders a step file" time="0.001375"/>
+  <testcase classname="/home/steven/Code/installfest/spec/step_spec.rb" name="Step puts titles in based on step names" time="0.000928"/>
+  <testcase classname="/home/steven/Code/installfest/spec/step_spec.rb" name="Step puts anchors in based on step numbers" time="0.000964"/>
+  <testcase classname="/home/steven/Code/installfest/spec/step_spec.rb" name="Step nests anchor numbers" time="0.002225"/>
+  <testcase classname="/home/steven/Code/installfest/spec/step_spec.rb" name="Step link passes in a back parameter, so the following page can come back here" time="0.005448"/>
+  <testcase classname="/home/steven/Code/installfest/spec/step_spec.rb" name="Step source_code emits a block of code as a pre with class 'code'" time="0.000422"/>
+  <testcase classname="/home/steven/Code/installfest/spec/step_spec.rb" name="Step source_code emits a block of code with a language directive" time="0.000260"/>
+  <testcase classname="/home/steven/Code/installfest/spec/app_spec.rb" name="InstallFest is a sinatra app" time="0.081159"/>
+  <testcase classname="/home/steven/Code/installfest/spec/app_spec.rb" name="InstallFest redirects / to the default site" time="0.050070"/>
+  <testcase classname="/home/steven/Code/installfest/spec/app_spec.rb" name="InstallFest redirects /site to /site/site" time="0.017009"/>
+  <testcase classname="/home/steven/Code/installfest/spec/app_spec.rb" name="InstallFest has a default site" time="0.002003"/>
+  <testcase classname="/home/steven/Code/installfest/spec/app_spec.rb" name="InstallFest looks for a site named the same as the host" time="0.015438"/>
+  <testcase classname="/home/steven/Code/installfest/spec/app_spec.rb" name="InstallFest settings accepts default_site via setter" time="0.002110"/>
+  <testcase classname="/home/steven/Code/installfest/spec/app_spec.rb" name="InstallFest settings accepts default_site via Sinatra set" time="0.000165">
+    <skipped/>
+  </testcase>
+  <testcase classname="/home/steven/Code/installfest/spec/app_spec.rb" name="InstallFest settings can configure the sites_dir" time="0.007630"/>
+  <testcase classname="/home/steven/Code/installfest/spec/app_spec.rb" name="InstallFest an app with slides renders a deck" time="0.017111"/>
+  <testcase classname="/home/steven/Code/installfest/spec/app_spec.rb" name="InstallFest an app with slides serves up deck.js and other public assets" time="0.032872"/>
+  <testcase classname="/home/steven/Code/installfest/spec/media_wiki_spec.rb" name="mw2md converts [[]]" time="0.000177"/>
+</testsuite>

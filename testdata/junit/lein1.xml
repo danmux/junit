@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="circle.backend.action.test-load-balancer" errors="0" tests="1" failures="0" elapsed="0.58">
+    <testcase name="load-balancer-calls-abort-when-shit-breaks" time="0.58"></testcase>
+</testsuite>
